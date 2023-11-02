@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1
+            style="
+                color: rgb(161, 161, 252);
+                text-align: center;
+                font-size: 5rem;
+            "
+        >
+            Mudkip
+        </h1>
+        <img
+            src="https://i.pinimg.com/originals/8b/87/6d/8b876dcc1406c47eb94ee0849659fe96.gif"
+            alt=""
+        />
+        <img
+            src="https://i.pinimg.com/originals/8b/87/6d/8b876dcc1406c47eb94ee0849659fe96.gif"
+            alt=""
+        />
+        <img
+            src="https://i.pinimg.com/originals/8b/87/6d/8b876dcc1406c47eb94ee0849659fe96.gif"
+            alt=""
+        />
+        <img
+            src="https://i.pinimg.com/originals/8b/87/6d/8b876dcc1406c47eb94ee0849659fe96.gif"
+            alt=""
+        />
+        {% for lista in listinha %}
+        <h1>{{ lista.title }}</h1>
+        {% endfor%}
+        <a href="{% url 'listinha:listinha' %}">
+            <img src="{{ listinha.imagem.url }}" alt="temporario" />
+        </a>
+    </body>
+</html>
