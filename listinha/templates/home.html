@@ -32,10 +32,16 @@
             alt=""
         />
         {% for lista in listinha %}
+
         <h1>{{ lista.title }}</h1>
+        <h1>{{ lista.descricao }}</h1>
+
+        <img src="{{ lista.imagem.url }}"/>
+                
         {% endfor%}
-        <a href="{% url 'listinha:listinha' %}">
-            <img src="{{ listinha.imagem.url }}" alt="temporario" />
-        </a>
+        
+
+
+
     </body>
 </html>
